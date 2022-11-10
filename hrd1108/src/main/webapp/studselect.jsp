@@ -50,7 +50,7 @@
     <td><%=address %></td>
     <td><%=phone %></td>
     <td><%=hobby %></td>
-    <td><a href="studupdate.jsp?studno=<%=studno%>">수정</a>/<a href="studdelete.jsp">삭제</a></td>
+    <td><a href="studupdate.jsp?studno=<%=studno%>">수정</a>/<a href="studdelete.jsp?studno=<%=studno %>">삭제</a></td>
   </tr>
   	<%
     	}

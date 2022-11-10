@@ -11,16 +11,16 @@
 
 <%
 PreparedStatement pstmt=null;
-String studno=request.getParameter("studno");
+String id=request.getParameter("id");
 try{
-	String sql="delete from stud1108 where studno=?";
+	String sql="delete from sub1108 where id=?";
 	pstmt=conn.prepareStatement(sql);
-	pstmt.setString(1, studno);
+	pstmt.setString(1, id);
 	pstmt.executeUpdate();
 	%>
 	<script>
 	alert("삭제 되었습니다!");
-	location.href="studselect.jsp";
+	location.href="subselect.jsp";
 	</script>
 	<% 
 	}catch(Exception e){
@@ -30,6 +30,5 @@ try{
 			
 
 %>
-
 </body>
 </html>

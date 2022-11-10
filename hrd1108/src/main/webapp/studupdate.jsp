@@ -5,6 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+function check(){
+ 	if(document.form.name.value==""){
+		alert("성명을 입력하세요");
+		document.form.custid.focus();} 
+
+ 	else{document.form.submit();} }
+</script>
 </head>
 <body>
 <%@ include file="header.jsp" %>

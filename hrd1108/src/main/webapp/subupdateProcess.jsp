@@ -15,12 +15,13 @@
    String subject_name=request.getParameter("subject_name");
    String credit=request.getParameter("credit");
    String lecturer=request.getParameter("lecturer"); 
-   String week=request.getParameter("week"); 
-   String start_hour=request.getParameter("start_hour"); 
-   String end_hour=request.getParameter("end_hour"); 
-      
+   String week=request.getParameter("week");
+   String start_hour=request.getParameter("start_hour");
+   String end_hour=request.getParameter("end_hour");  
+ 
+   
    try{
-	   String sql="insert into sub1108 values(?,?,?,?,?,?,?)";
+	   String sql="update sub1108 set id=?,subject_name=?,credit=?,lecturer=?,week=?,start_hour=?,end_hour=? where id=?";
 	   pstmt=conn.prepareStatement(sql);
 	   pstmt.setString(1, id);
 	   pstmt.setString(2, subject_name);
@@ -29,10 +30,12 @@
 	   pstmt.setString(5, week);
 	   pstmt.setString(6, start_hour);
 	   pstmt.setString(7, end_hour);
+	   pstmt.setString(8, id);
+	   
 	   pstmt.executeUpdate();
 	   %>
 	   <script>
-	     alert("등록 완료");
+	     alert("수정 완료");
 	     location.href="subselect.jsp";
 	   </script>
 	   <%

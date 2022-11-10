@@ -30,7 +30,7 @@
    String phone=request.getParameter("phone");
    
    try{
-	   String sql="update into stud1108 values(?,?,?,?,?,?,?)";
+	   String sql="update stud1108 set studno=?,name=?,dept=?,position=?,address=?,phone=?,hobby=? where studno=?";
 	   pstmt=conn.prepareStatement(sql);
 	   pstmt.setString(1, studno);
 	   pstmt.setString(2, name);
@@ -39,6 +39,7 @@
 	   pstmt.setString(5, address);
 	   pstmt.setString(6, phone);
 	   pstmt.setString(7, hobby);
+	   pstmt.setString(8, studno);
 	   pstmt.executeUpdate();
 	   %>
 	   <script>
