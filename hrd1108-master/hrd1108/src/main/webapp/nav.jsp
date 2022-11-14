@@ -11,7 +11,7 @@
 <ul>
   <li><a href="studinsert.jsp">학사 정보 추가</a></li>
   <li><a href="subinsert.jsp">교과목 추가</a></li>
-  <li><a href="teacherinsert.jsp">강사 추가</a></li>
+  <li><a href="">강사 추가</a></li>
   <li><a href="">수강 정보 추가</a></li>
   <li><a href="studselect.jsp">학사 정보 조회</a></li>
   <li><a href="subselect.jsp">교과목 조회</a></li>
