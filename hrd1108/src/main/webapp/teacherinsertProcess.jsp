@@ -18,6 +18,7 @@
      
      try{
     	 String sql="insert into teacher1108 values(?,?,?,?)";
+    	 pstmt=conn.prepareStatement(sql);
     	 pstmt.setString(1, idx);
     	 pstmt.setString(2, name);
     	 pstmt.setString(3, major);

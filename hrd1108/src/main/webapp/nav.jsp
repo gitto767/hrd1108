@@ -15,7 +15,7 @@
   <li><a href="">수강 정보 추가</a></li>
   <li><a href="studselect.jsp">학사 정보 조회</a></li>
   <li><a href="subselect.jsp">교과목 조회</a></li>
-  <li><a href="">강사 조회</a></li>
+  <li><a href="teacherselect.jsp">강사 조회</a></li>
   <li><a href="">수간 신청 조회</a></li>
   <li><a href="index.jsp">home</a></li>  
 </ul>
